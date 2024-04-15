@@ -78,6 +78,43 @@ header nav img {
     height: 70px;
 }
 
+section .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 244, 198, 1);
+    border-width: 1px;
+    border-color: rgba(238, 210, 93, 1);
+    border-radius: 4px;
+    border-style: solid;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    gap: 20px;
+}
+
+section .timer .timer-title {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: Roboto;
+    color: rgba(25, 30, 42, 1);
+}
+
+section .timer .timer-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+section .timer .timer-content .timer-item {
+    text-align: center;
+}
+
+section .timer .timer-content .timer-item .timer-number {
+    font-size: 24px;
+}
+
 section .product {
     display: flex;
     /* flex-wrap: wrap; */
@@ -224,6 +261,56 @@ section.description {
     padding: 20px;
     margin-top: 50px;
 }
+
 section.description h2 {
     margin-bottom: 30px;
+}
+
+section.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: rgba(40, 121, 255, 0.06);
+}
+section.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+section.services .serv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0px 3px 14px 5px rgba(214,224,245,0.3);
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    transition: 0.3s;
+}
+section.services .serv:hover {
+    box-shadow: 0px 3px 14px 5px rgba(214,224,245,0.5);
+    transform: translate(0, -10px);
+}
+section.services .serv img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 30px;
+}
+section.services .serv h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(25, 30, 42, 1);
+    margin-bottom: 10px;
+}
+section.services .serv p {
+    text-align: center;
+    font-weight: regular;
+    line-height: 150%;
+    color: rgba(87, 99, 122, 1);
+    font-size: 16px;
 }
