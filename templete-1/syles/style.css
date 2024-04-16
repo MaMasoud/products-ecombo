@@ -258,32 +258,40 @@ section .product .product-photos .sub-photos img {
         flex-direction: column;
     }
 
-    section .product .product-photos, section .product .product-info {
+    section .product .product-photos,
+    section .product .product-info {
         width: 100%;
     }
 
 }
+
 @media (max-width: 510px) {
     section .timer {
         flex-direction: column;
         gap: 10px;
         padding: 10px;
     }
+
     section .timer .timer-title {
         font-size: 18px;
     }
-    section .timer .timer-content .timer-item{
+
+    section .timer .timer-content .timer-item {
         gap: 10px;
     }
+
     section .timer .timer-content .timer-item .timer-number {
         font-size: 18px;
     }
+
     section .product .product-photos {
         flex-direction: column-reverse;
     }
+
     section .product .product-photos .main-photo {
         width: 100%;
     }
+
     section .product .product-photos .sub-photos {
         width: 100%;
         flex-direction: row;
@@ -310,12 +318,14 @@ section.services {
     padding-right: 24px;
     background-color: rgba(40, 121, 255, 0.06);
 }
+
 section.services .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     justify-content: space-between;
 }
+
 section.services .serv {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -325,26 +335,30 @@ section.services .serv {
     align-items: center;
     flex-direction: column;
     border-radius: 6px;
-    box-shadow: 0px 3px 14px 5px rgba(214,224,245,0.3);
+    box-shadow: 0px 3px 14px 5px rgba(214, 224, 245, 0.3);
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
     transition: 0.3s;
 }
+
 section.services .serv:hover {
-    box-shadow: 0px 3px 14px 5px rgba(214,224,245,0.5);
+    box-shadow: 0px 3px 14px 5px rgba(214, 224, 245, 0.5);
     transform: translate(0, -10px);
 }
+
 section.services .serv img {
     width: 32px;
     height: 32px;
     margin-bottom: 30px;
 }
+
 section.services .serv h3 {
     font-size: 24px;
     font-weight: 700;
     color: rgba(25, 30, 42, 1);
     margin-bottom: 10px;
 }
+
 section.services .serv p {
     text-align: center;
     font-weight: regular;
@@ -352,4 +366,31 @@ section.services .serv p {
     color: rgba(87, 99, 122, 1);
     font-size: 16px;
 }
-.extm {direction: ltr;}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+footer .links {
+    display: flex;
+    gap: 20px;
+}
+
+footer .links a {
+    color: rgba(87, 99, 122, 1);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+footer .links a:hover {
+    color: rgba(25, 30, 42, 1);
+}
+
+.extm {
+    direction: ltr;
+}
