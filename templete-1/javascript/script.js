@@ -5,3 +5,7 @@ $('.example-2').extm({
 $('.example-3').extm({
     squareOverlay: true,
 });
+
+function changeMainPhoto(src) {
+    document.getElementById("main-photo").src = src;
+}
