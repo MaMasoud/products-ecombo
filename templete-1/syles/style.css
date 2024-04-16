@@ -253,6 +253,43 @@ section .product .product-photos .sub-photos img {
     width: 100%;
 }
 
+@media (max-width: 991px) {
+    section .product {
+        flex-direction: column;
+    }
+
+    section .product .product-photos, section .product .product-info {
+        width: 100%;
+    }
+
+}
+@media (max-width: 510px) {
+    section .timer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    section .timer .timer-title {
+        font-size: 18px;
+    }
+    section .timer .timer-content .timer-item{
+        gap: 10px;
+    }
+    section .timer .timer-content .timer-item .timer-number {
+        font-size: 18px;
+    }
+    section .product .product-photos {
+        flex-direction: column-reverse;
+    }
+    section .product .product-photos .main-photo {
+        width: 100%;
+    }
+    section .product .product-photos .sub-photos {
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
 section.description {
     line-height: 150%;
     font-family: Roboto;
@@ -275,7 +312,7 @@ section.services {
 }
 section.services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     gap: 30px;
 }
 section.services .serv {
